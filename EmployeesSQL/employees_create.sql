@@ -1,11 +1,9 @@
 CREATE TABLE departments (
-	id SERIAL PRIMARY KEY,
 	dept_no VARCHAR,
 	dept_name VARCHAR
 );
 
 CREATE TABLE dept_emp (
-	id SERIAL PRIMARY KEY,
 	emp_no INT,
 	dept_no VARCHAR
 );
@@ -41,3 +39,10 @@ SELECT * FROM dept_manager;
 SELECT * FROM employees;
 SELECT * FROM salaries;
 SELECT * FROM titles;
+
+DROP TABLE departments;
+DROP TABLE dept_emp;
+DROP TABLE dept_manager;
+DROP TABLE employees;
+DROP TABLE salaries;
+DROP TABLE titles;
