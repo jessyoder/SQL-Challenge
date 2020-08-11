@@ -7,18 +7,18 @@ e.emp_no=s.emp_no;
 -- List first name, last name, and hire date for employees who were hired in 1986.
 SELECT * FROM employees;
 
-ALTER TABLE employees
-ADD COLUMN hire_year INT;
-
-SELECT EXTRACT(YEAR FROM hire_date) AS "hire_year";
-
-INSERT INTO employees (hire_year)
-VALUES (hire_year);
-
 SELECT first_name, last_name, hire_date
 FROM employees
-WHERE hire_date = 
--- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
+
+-- List the manager of each department with the following information: department number, department name, 
+-- the manager's employee number, last name, first name.
+SELECT d.dept_no, d.dept_name, m.emp_no, e.last_name, e.first_name
+FROM departments AS d
+JOIN dept_manager AS m ON
+d.dept_no=m.dept_no
+JOIN employees AS e ON
+m.emp_no=e.emp_no;
 
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 
