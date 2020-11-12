@@ -1,4 +1,4 @@
-employees_erd.png
+![alt text](https://github.com/jessyoder/SQL-Challenge/blob/master/EmployeesSQL/employees_erd.png)
 
 # SQL-Challenge
 
