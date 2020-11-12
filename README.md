@@ -1,3 +1,5 @@
+employees_erd.png
+
 # SQL-Challenge
 
 In this project, I have designed the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data.
